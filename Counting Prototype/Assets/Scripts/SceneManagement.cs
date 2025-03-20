@@ -5,19 +5,20 @@ using UnityEngine.SceneManagement;
  
 public class SceneManagement : MonoBehaviour
 {
+    private GameObject ball;
+    private Vector3 pos;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        ball = GameObject.Find("Ball");
+        pos = ball.transform.position;
+
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
 
     public void RestartGame(){
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        ball.transform.position = pos;
     }
 }
