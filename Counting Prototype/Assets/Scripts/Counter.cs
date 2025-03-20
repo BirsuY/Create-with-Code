@@ -9,15 +9,25 @@ public class Counter : MonoBehaviour
     public Text CounterText;
     public string teamName;
     private int Count = 0;
+    public SceneManagement sceneManager;
+    public void Start(){
+        Count = PlayerPrefs.GetInt(teamName + "Count", 0);
+        //CounterText.text = teamName + ": " + Count;
 
-    private void Start()
+        //StartGame(Count);
+    }
+    private void StartGame(int count)
     {
-        Count = 0;
+        Count = count;
+
+        
     }
 
     private void OnTriggerEnter(Collider other)
     {
         Count += 1;
+        PlayerPrefs.SetInt(teamName + "Count", Count);
         CounterText.text = teamName + ": " + Count;
+        sceneManager.RestartGame();
     }
 }

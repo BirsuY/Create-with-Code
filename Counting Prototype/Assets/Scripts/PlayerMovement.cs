@@ -23,10 +23,10 @@ public class PlayerMovement : MonoBehaviour
         horizontalInput = Input.GetAxis("Horizontal");
         verticalInput = Input.GetAxis("Vertical");
         if(horizontalInput != 0){
-            playerRb.velocity = camera.transform.TransformDirection(Vector3.right*horizontalInput*speed);
+            playerRb.velocity = transform.TransformDirection(Vector3.forward*-horizontalInput*speed);
         }
         if(verticalInput != 0){
-            playerRb.velocity = camera.transform.TransformDirection(Vector3.forward*verticalInput*speed);
+            playerRb.velocity = transform.TransformDirection(Vector3.right*verticalInput*speed);
         }
 
     }

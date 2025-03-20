@@ -8,7 +8,7 @@ public class EnemyController : MonoBehaviour
     private GameObject ball;
     private GameObject goalPost;
     private Rigidbody rb;
-    private bool isNextTo = false;
+    public bool isNextTo = false;
     private float speed = 3.0f;
     // Start is called before the first frame update
     void Start()
@@ -28,8 +28,15 @@ public class EnemyController : MonoBehaviour
     void OnCollisionEnter(Collision other){
         if(other.gameObject.CompareTag("Ball")){
             isNextTo = true;
-        }
+        } 
         //if player is on the way go to another direction
+    }
+
+     void OnCollisionExit(Collision other)
+    {
+        if(other.gameObject.CompareTag("Ball")){
+            isNextTo = false;
+        }     
     }
 
     void MoveEnemy(){

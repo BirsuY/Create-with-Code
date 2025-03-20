@@ -491,6 +491,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CounterText: {fileID: 598753586}
   teamName: Brookdale United
+  sceneManager: {fileID: 1279346688}
 --- !u!65 &145979414
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -687,8 +688,8 @@ Transform:
   m_GameObject: {fileID: 353238124}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: -0.7071068}
-  m_LocalPosition: {x: -1.0799999, y: 1, z: 23.76}
-  m_LocalScale: {x: 52, y: 0.10000004, z: 4}
+  m_LocalPosition: {x: -1.0799999, y: 1, z: 14.9}
+  m_LocalScale: {x: 52, y: 5, z: 4}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1429747398}
@@ -792,8 +793,8 @@ Transform:
   m_GameObject: {fileID: 361032014}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: -0.7071068}
-  m_LocalPosition: {x: -1.0799999, y: 1, z: -40.239998}
-  m_LocalScale: {x: 52, y: 0.10000004, z: 4}
+  m_LocalPosition: {x: -1.0799999, y: 1, z: -29.5}
+  m_LocalScale: {x: 52, y: 5, z: 4}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1429747398}
@@ -1861,8 +1862,8 @@ Transform:
   m_GameObject: {fileID: 1123141776}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -27.08, y: 1, z: -8.24}
-  m_LocalScale: {x: 0.1, y: 64, z: 4}
+  m_LocalPosition: {x: -19.6, y: 1, z: -8.24}
+  m_LocalScale: {x: 5, y: 64, z: 4}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1429747398}
@@ -1973,6 +1974,50 @@ Transform:
   - {fileID: 145979412}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1279346686
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1279346687}
+  - component: {fileID: 1279346688}
+  m_Layer: 0
+  m_Name: SceneManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1279346687
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1279346686}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 17.675, y: 1.9999998, z: 35.949997}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1279346688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1279346686}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc3a4cd6c6f06424ca9e97137dd8c155, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1357351969
 GameObject:
   m_ObjectHideFlags: 0
@@ -2339,6 +2384,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d84c869ee5674a8184fe7223001ac9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isNextTo: 0
 --- !u!54 &1606491462
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2427,7 +2473,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 60
+  field of view: 57.800976
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -2453,13 +2499,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1648811350}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.13790607, y: -0, z: -0, w: 0.9904454}
-  m_LocalPosition: {x: 0.22800064, y: 0.5899999, z: -0.52000046}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: 0.50096583, y: 0.49903238, z: -0.49903232, w: 0.50096583}
+  m_LocalPosition: {x: 0.22800064, y: 11.23, z: -0.29999924}
+  m_LocalScale: {x: 1, y: 1.9253746, z: 0.5373128}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 376887837}
-  m_LocalEulerAnglesHint: {x: 15.853, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: -89.778}
 --- !u!114 &1648811354
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2516,7 +2562,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b90655624aca4aafbe83ef01896fde2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sensitivity: 1
+  sensitivity: 0
 --- !u!1 &1674201881
 GameObject:
   m_ObjectHideFlags: 0
@@ -2650,8 +2696,8 @@ Transform:
   m_GameObject: {fileID: 1732537850}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 22.92, y: 1, z: -8.24}
-  m_LocalScale: {x: 0.1, y: 64, z: 4}
+  m_LocalPosition: {x: 17.7, y: 1, z: -8.24}
+  m_LocalScale: {x: 5, y: 64, z: 4}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1429747398}
@@ -2883,6 +2929,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CounterText: {fileID: 157955063}
   teamName: Westfield Rovers
+  sceneManager: {fileID: 1279346688}
 --- !u!4 &2078385047
 Transform:
   m_ObjectHideFlags: 0
@@ -3014,6 +3061,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CounterText: {fileID: 598753586}
   teamName: 
+  sceneManager: {fileID: 0}
 --- !u!114 &2135679472
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3105,3 +3153,4 @@ SceneRoots:
   - {fileID: 1537536575408478230}
   - {fileID: 376887837}
   - {fileID: 1606491460}
+  - {fileID: 1279346687}
