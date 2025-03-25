@@ -6,7 +6,7 @@ using System.IO;
 public class MainManager : MonoBehaviour
 {
     //singleton
-    public static MainManager Instance;
+    public static MainManager Instance{ get; private set;}  //you can now set the property’s value from within the class, but only get it from outside the class. 
     public Color chosenColor;
 
     private void Awake(){
